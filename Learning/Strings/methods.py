@@ -37,3 +37,40 @@ print(countText.count('apple', 10,20))
 print("============== 5 ===================")
 encodeText = "My name is Ståle"
 print(encodeText.encode())
+
+#endswith() that Returns true if the string ends with the specified value
+print("============== 6 ===================")
+endswithText = "Hello, welcome to my world."
+print(endswithText.endswith("my world."))
+print(endswithText.endswith("my world.", 5, 11))
+print(endswithText.endswith(("castle.","world.")))
+
+#expandtabs() Sets the tab size of the string
+print("============== 7 ===================")
+expandtabsText = "H\te\tl\tl\to"
+print(expandtabsText)
+print(expandtabsText.expandtabs())
+print(expandtabsText.expandtabs(2))
+print(expandtabsText.expandtabs(4))
+print(expandtabsText.expandtabs(10))
+
+#find() that Searches the string for a specified value and returns the position of where it was found
+print("============== 8 ===================")
+findText = "Hello, welcome to my world."
+print(findText.find("welcome"))
+print(findText.find("e"))
+print(findText.find("e",5,10))
+
+#format() that Formats specified values in a string
+print("============== 9 ===================")
+formatText = "For only {price:.2f} dollars!"
+print(formatText.format(price = 49))
+print("My name is {fname}, I'm {age}".format(fname = "Sagar",age = 30))
+
+
+#index() that Searches the string for a specified value and returns the position of where it was found
+print("============== 10 ===================")
+indexText = "Hello, welcome to my world."
+print(indexText.index("welcome"))
+print(indexText.index("e"))
+print(indexText.index("e",5,10))
